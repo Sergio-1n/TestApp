@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { fetchUsers } from './lib/actions/fetchUsers';
+import { fetchUsers } from '../lib/actions/fetchUsers';
 
 type User = {
   id: number;
