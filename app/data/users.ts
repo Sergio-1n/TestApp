@@ -1,25 +1,10 @@
-const users = [
-  {
-    id: 1,
-    name: 'John Wick',
-  },
-  {
-    id: 2,
-    name: 'David Beckam',
-  },
+export type User = {
+  id: number;
+  name: string;
+  email: string;
+};
+
+export const users: User[] = [
+  { id: 1, name: 'John Wick', email: 'john.wick@example.com' },
+  { id: 2, name: 'David Beckham', email: 'david.beckham@example.com' },
 ];
-
-// get all users
-export function getUsers() {
-  return users;
-}
-
-// add new user
-export function addUser(name: string) {
-  const newUser = {
-    id: users.length + 1,
-    name,
-  };
-  users.push(newUser);
-  return newUser;
-}

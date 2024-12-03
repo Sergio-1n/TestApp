@@ -1,17 +1,7 @@
 'use server';
 
+import { User, users } from '@/app/data/users';
 import { NextResponse } from 'next/server';
-
-type User = {
-  id: number;
-  name: string;
-  email: string;
-};
-
-const users: User[] = [
-  { id: 1, name: 'John Wick', email: 'john.wick@example.com' },
-  { id: 2, name: 'David Beckham', email: 'david.beckham@example.com' },
-];
 
 // GET all users
 export async function GET() {
