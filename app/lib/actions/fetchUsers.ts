@@ -1,6 +1,6 @@
-// lib/actions/fetchUsers.ts
+'use server';
 export async function fetchUsers() {
-  const response = await fetch(`http://localhost:3000/api/users`, {
+  const response = await fetch(`http://localhost:3001/api/users`, {
     cache: 'no-store',
   });
 
