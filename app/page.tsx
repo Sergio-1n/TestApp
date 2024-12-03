@@ -1,12 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-
-type User = {
-  id: number;
-  name: string;
-  email: string;
-};
+import { User } from './data/users';
 
 export default function UsersPage() {
   const [users, setUsers] = useState<User[]>([]);
